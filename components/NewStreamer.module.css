@@ -1,0 +1,95 @@
+.form {
+    width: 100%;
+    height: 33vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    min-height: 500px;
+    font-family: 'Overpass Mono';
+}
+
+.wrap {
+    width: 30vw;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #fcfcfc;
+    box-shadow: 0 2px 6px black;
+}
+
+.formTitle {
+    text-align: center;
+    background-color: #3399FF;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.flexdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.flexdiv select {
+    padding: 5px 35px;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.flexdiv label {
+    margin-bottom: 10px;
+}
+
+.flexdiv input {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+    min-width: 200px;
+    min-height: 30px;
+}
+
+.flexdiv button {
+    margin: 20px 0;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid #3399FF;
+    background-color: #3399FF;
+    color: white;
+    cursor: pointer;
+    font-family: 'Overpass Mono';
+}
+
+@media (max-width:700px) and (orientation: portrait) {
+
+    .wrap {
+        width: 66vw;
+    }
+}
+
+@media (max-width:900px) and (orientation: landscape) {
+    .form {
+        width: 60vw;
+        height: 60vh;
+        top: 65%;
+        min-height: 200px;
+    }
+
+    .flexdiv {
+        margin-top: 5px;
+        font-size: 26px;
+    }
+
+    .flexdiv label {
+        margin-bottom: 10px;
+    }
+
+    .flexdiv button {
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,47 @@
+.item {
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 30px;
+    min-width: 550px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.title {
+    font-size: 24px;
+    margin: 5px 15px;
+    text-align: center;
+    font-family: 'Overpass Mono';
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+@media (max-width:490px) and (orientation: portrait) {
+
+    .item {
+        min-width: 240px;
+    }
+
+    .title {
+        margin-bottom: 5px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width:800px) and (orientation: landscape) {
+    .item {
+        justify-content: space-between;
+        min-width: 280px;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
