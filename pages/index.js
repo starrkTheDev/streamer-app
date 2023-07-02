@@ -38,7 +38,7 @@ export default Form;
 
 
 export async function getStaticProps() {
-    const client = await MongoClient.connect('mongodb+srv://admin333:sl4b33lo@streamercluster.tglmjqw.mongodb.net/streamers?retryWrites=true&w=majority');
+    const client = await MongoClient.connect('mongodb+srv://admin333:********@streamercluster.tglmjqw.mongodb.net/streamers?retryWrites=true&w=majority');
     const db = client.db();
     const streamersCollection = db.collection('streamers');
     const streamers = await streamersCollection.find().toArray();
